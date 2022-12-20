@@ -1,0 +1,5 @@
+->Her şeyi canvas üzerindeki bütün objeleri etiketlemek lazım, sistematik olacak.
+->Canvastaki bütün rectangle ve oval objelerin içinin fill olması lazım, yani boyanacak. 
+->Mainboard, URSA, PSU için referans koordinat belirlenmesi panel sayfasında
+->PDF ten EMC sonuçlarının çekilmesi için menü sayfası eklenecek
+->

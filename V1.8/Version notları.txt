@@ -1,0 +1,52 @@
+v1.1 notlar
+->Panel sayfasına perspective transform eklendi
+->Panel üzerinde TCON, sourceboard, LVDS konnektör ve TCON üzerindeki vida noktalarını işaretlemek için wizard hazırlandı.
+->Panel database scripti düzenlendi
+->Tv config sayfasında panel verilerinin düzgün aktarılması sağlandı
+
+v.1.2 notlar
+->Mainboardgui sayfasında mainboard, screw ve konnektör koordinatları database e cm cinsinden kayıt yapacak şekilde düzenlendi
+->Tv config sayfası; mainboard un düzgün şekilde aktarılacağı şekilde düzenlendi
+
+v.1.3 notlar
+->PSU, URSA gui scriptlerine import from image butonu eklendi.
+->PSU ve URSA database'e cm cinsinden kaydedilecek şekilde editlendi
+->TV config scripti PSU ve URSA nın boyutları, screw ve konektörleri doğru yerlere yakın şekilde aktarılıyor.
+(import from image ile PCB'yi import edince sağdan ve soldan padding var bu sebeple koordinatlar bir miktar kayıyor)
+
+v.1.4 notlar
+->TV config sayfasında kablolama işleminin doğru yapılabilmesi için editlendi.
+->PanelGui'ye TCON üzerinde DC konnektör opsiyonu eklendi.
+->PanelGui'de TCON ve Sourceboard LVDS konnektörü labelları ayrıldı.
+
+v.1.5 notlar
+->EMI tape TV konfigürasyon sayfasına eklendi(kodlar birleştirildi)
+->Canvastaki bütün rectangle ve oval objeler fill olacak şekilde değiştirildi
+->Panel gui'de Mainboard, URSA, PSU için referans koordinat ekleme step'i oluşturuldu. Tvconfiggui'ye implemente edildi
+
+v.1.6 notlar
+->Ferrite TV konfig sayfasına eklendi
+->Backplane de fill yapıldı
+
+V1.7 notlar
+-> PDF ve Excel ekleme sayfası ve TVC kaydetme, TVC nin öğret sayfasına import edilmesi için düzenlemeler yapıldı devam edilmeli
+
+
+Yapılacaklar:
+->Canvas üzerindeki bütün objeleri etiketlemek lazım, sistematik olacak
+(kabloların etiketleri yok, backplane de etiketlerde çıkıyor fill olduğu için bunu konuşalım)
+->PDF ten EMC sonuçlarının çekilmesi için menü sayfası eklenecek
+->Her şeyin database e düzgün bir şekilde yazıldığına emin olunduktan sonra data toplanmaya başlanacak.
+->Belli bir miktar data toplandıktan sonra Linear Regresyon modeli oluşturulacak.
+->Trial and error yaklaşımıyla model eğitim sürecine başlanacak.
+->Kazanılan knowhow makaleye dönüştürülecek.
+-> Wifi ve IR kablo eklenecek
+-> Öğret sayfasında, TVC çekildikten sonra yeniden kablaj Emitape ve ferit modifleri yapılabilmeli
+-> EMC modifleri öğret sayfasına konabilmeli:
+---> PSU da snubber parametreleri
+---> MAinboarddaki bazı değişikliler
+---> panel parametlreleri etc.
+
+-> Bazı kritik komponentlerin yeri kart üzerinde belirlenmeli
+--->PSu trafo, snubber elemanları
+--->Mainboard SoC RAM FLASH etc.

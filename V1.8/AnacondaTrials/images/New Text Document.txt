@@ -1,0 +1,24 @@
+Hello to all!
+
+I am an electronics engineer and working as a hardware design engineer (I usually design Mainboard for Televisions). However, I am not unfamiliar with programming software, I am particularly good at embedded C with microcontroller applications. 
+
+So I just started using python. I have a project that is about deep learning of EMC (Electro Magnetic Compability) traits in televisions. Let me explain it in more detail. Every electronic device in the market is obliged to meet universal EMC regulations. One (and probably the most important one) of the EMC regulation tests is REM (radiated emission measurements) which measures the electromagnetic radiation emitted from the device under test by each angle, height and some other conditions. After we design and produce the television, before releasing the TV on market, we put the final product in EMC tests and in 99% of the cases, there is a REM problem. Do overcome this REM problem we spend hours to days even weeks in EMC laboratories (which is quite expensive). We do some certain types of modifications in the TV to meet the regulations. I will give you an example below. This is the first REM test of a product I designed:
+
+[img]https://ibb.co/FnM7mJW[/img]
+[img]https://ibb.co/ZKGDCD8[/img]
+
+You will see the red thick regulation limits starting from 40 dBuV/m. You will also notice that the radiation level around 220 MHz is critically close to the limits. To prevent this risk I switched one of the screws in the mainboard from metal to isolated plastic and the new result was as below:
+
+[img]https://ibb.co/6H1pHQF[/img]
+[img]https://ibb.co/Rz16Mwn[/img]
+
+now it is good to go. However, the thing is I had to spend almost 2 hours to figure out what the source of the problem was. Because, your hunches are usually wrong and there are like 1000 methods to try. But luckily, if you try that 1000 methods you definitely solve the problem. So I thought, why don't I just collect all the REM data (from 2005 to now there are 3000+ data like this), feed them in to a deep learning application and make the algorithm do the job for you in the most efficient way.
+
+The plan is to develop a regression model for REM tests. The input data will be the size (40"/ 55"/ 70" etc), refreshing Rate, frame rate, cable types, panel vendor etc. all the categorizable inputs will be used for regression model. I will add all the data from 2005 and feed them into algorithm, and algorithm will learn which method resulted in which outputs (like decrease in frequency range 100 MHz by 10 db etc) in which input and will build a model. After the model is ready, it will make suggestions for failed EMC test results. I hope I explained my idea clearly. 
+
+I started by following through this tutorial: https://stackabuse.com/pytesseract-simple-python-optical-character-recognition/
+
+I can detect the optical characters in the png file. After that I'm planning to extract the data from the graph (I don't know where to start here). After that, I will start to learn the ways build a regression model for this particular application.
+
+What I would like to learn from you is a guideline for this project. Because I'm buzzled! I don't know where to start! There are many applications which seem useful to me and python is a really powerful script and has a great community.  
+

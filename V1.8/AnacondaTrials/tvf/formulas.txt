@@ -1,0 +1,10 @@
+=IF($B$4="FERRITE_ADDED";ferrite;
+IF($B$4="CABLE_ORGANISATION";cable_org;
+IF($B$4="EMI_TAPE";emi_tape;
+IF($B$4="RELOCATION";relocation;
+IF($B$4="MODULE_CHANGE";module_change;
+IF($B$4="MODULE_MODIFICATION";module_modif;
+IF($B$4="COMPONENT_CHANGE";component_change;
+IF($B$4="COMPONENT_MODIFICATION";component_modif;
+IF($B$4="SCREW_MODIFICATION";screw_modif;
+IF($B$4="GASKET";gasket))))))))))
